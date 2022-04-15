@@ -1,0 +1,108 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base*/
+
+body{
+background: var(--preto);
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-size: 40px;
+    }
+
+header nav a{
+        text-decoration: none;
+        color: #AAA;
+        margin-right: 10px;
+    }
+
+header nav a:hover{
+         color: #fff;
+    }
+
+/*filme principal*/
+
+.filme-principal{
+        font-size: 16px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(/src/img/background-americans.jpg);
+    
+        height: 500px;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+.filme-principal .descricao{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+.filme-principal .titulo{
+        font-size: 50px;
+    }
+
+.filme-principal .botao{
+        font-size: 15px;
+       
+        margin-left: 5px;
+        margin-right: 10px;
+        padding: 15px 30px;  
+        border: none;
+        border-radius: 5px;
+
+        background-color: rgba(0,0,0,.50);
+        color: white;
+
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+
+.filme-principal .botao:hover{
+        background-color: white;
+        color: black;
+    }
+
+.filme-principal .botao i{
+        margin-right: 5px;
+    }
+
+.container{
+        margin-left: 35px;
+    }
+
+.filme-principal .container{
+        width: 50%;
+    }
+
+
+
+.box-filme{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+.carrosel{
+    margin-top: 10px;
+}
